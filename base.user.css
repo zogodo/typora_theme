@@ -1,3 +1,6 @@
+table {
+	border-collapse: collapse;
+}
 th, td {
 	border: 1px solid black!important;
 	padding: 5px 10px!important;
@@ -10,6 +13,9 @@ td {
 	background: white!important;
 }
 @media print {
+	html {
+        font-size: 16px;
+    }
 	* {
 		page-break-before: auto!important;
 		page-break-inside: auto!important;
@@ -19,3 +25,15 @@ td {
 		page-break-inside: avoid!important;
 	}
 }
+p, table, li {
+	font-family: times, simsun, monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: times, simhei, monospace;
+}
+h1 { font-size: 16pt; }
+h2 { font-size: 15pt; }
+h3 { font-size: 14pt; }
+h4 { font-size: 13pt; }
+h5 { font-size: 12pt; }
+h6 { font-size: 11pt; }
